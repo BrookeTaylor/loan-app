@@ -1,0 +1,32 @@
+/**
+    Title: Assignment 8.3 - Capstone (Build)
+    Arthur: Professor Krasso
+    Date: 07/16/2023
+    Modified By: Brooks
+    Description: styles css
+*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  background-color: #740001;
+}
+
+
+
+
+mat-card {
+  margin: 5em;
+}
+
+mat-card-title {
+  text-align: center;
+  color: #740001;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}

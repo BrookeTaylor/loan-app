@@ -1,0 +1,15 @@
+/**
+    Title: Assignment 8.3 - Capstone (Build)
+    Arthur: Professor Krasso
+    Date: 07/16/2023
+    Modified By: Brooks
+    Description: styles css
+*/
+
+mat-toolbar {
+  background-color: #d3a625;
+}
+
+.toolbar {
+  margin-left: auto;
+}

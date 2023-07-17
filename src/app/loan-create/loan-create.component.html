@@ -1,0 +1,57 @@
+<!--
+    Title: Assignment 8.3 - Capstone (Build)
+    Arthur: Professor Krasso
+    Date: 07/16/2023
+    Description: loan create component html
+-->
+
+<div class="grid-container">
+
+  <div>
+
+    <form [formGroup]="loanForm" (ngSubmit)="calculate()">
+
+      <mat-form-field>
+
+        <mat-label>Loan Amount:</mat-label>
+        <input formControlName="principle" matInput>
+
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field>
+
+        <mat-label>Interest Rate (ex: 4.5):</mat-label>
+        <input formControlName="ratePerPeriod" matInput>
+
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field>
+
+        <mat-label>Number of years:</mat-label>
+        <input formControlName="numberOfYears" matInput>
+
+      </mat-form-field>
+
+      <br />
+
+      <button type="submit" [disabled]="loanForm.invalid" mat-button>Submit</button>
+
+    </form>
+
+  </div>
+
+
+  <div *ngIf="monthlyPayment">
+
+    <mat-card-header>Your Monthly Payment: {{ monthlyPayment | currency }}</mat-card-header>
+
+    <mat-card-header>Interest Paid: {{ totalInterestPaid | currency }}</mat-card-header>
+
+  </div>
+
+
+</div>
