@@ -1,0 +1,12 @@
+/**
+    Title: Assignment 9.2 - Capstone (Delivery)
+    Arthur: Professor Krasso
+    Date: 07/23/2023
+    Modified By: Brooks
+    Description: about us css
+*/
+
+table th, td {
+  padding: .5em;
+  text-align: center;
+}
